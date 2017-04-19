@@ -68,7 +68,6 @@ a {
 }
 
 body {
-  padding: 5px;
   max-width: 1366px;
   margin: 0 auto;
   font-family: "RobotoRegular", serif;
@@ -88,7 +87,7 @@ p,
 a,
 span,
 form {
-  margin-top: 20px;
+  mar gin-top: 20px;
   paddi ng: 0 20px;
 }
 
@@ -130,6 +129,7 @@ h2 span {
 /*HEADER BEGIN*/
 
 header {
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -142,7 +142,7 @@ header {
 }
 
 .main-image {
-  max-width: 66.5%;
+  max-width: 66.4%;
 }
 
 .main-image img {  
@@ -150,27 +150,34 @@ header {
 }
 
 .main-menu {
-  width: 33.5%;
-  padding: 0 5% 0 4%;
+  width: 33.6%;
+  padding: 0 4% 0 4%;
   background: #fff;
-  border: 1px solid blue;
+  background: #aaa;
 }
 
 .main-menu h2 {
-  margin-bottom: 45px;;
+  margin-top: 18px;
+  margin-bottom: 52px;;
   font-size: 40px;
   line-height: 57.75px;
 }
 
 .main-menu p {
-  margin-top: 28px;
-  font-style: 18px;
+  margin-top: 31px;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  word-break: break-all;
+}
+
+.main-menu p:last-child {
+  marg in-bottom: 122px;
 }
 
 .head-button {
   position: relative;
-  border-top: 3px #666 solid;
-  border-bottom: 3px #666 solid;
+  border-top: 3px rgba(38, 47, 50, 0.9) solid;
+  border-bottom: 3px rgba(38, 47, 50, 0.9) solid;
   width: 33px;
   height: 29px;
   margin: 57px 0 42px;
@@ -184,7 +191,7 @@ header {
   top: 50%;
   left: 0px;
   width: 100%;
-  border-top: 3px #666 solid;
+  border-top: 3px rgba(38, 47, 50, 0.9) solid;
   margin-top: -1.5px;
 }
 
