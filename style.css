@@ -54,6 +54,10 @@
   border: none;
 }
 
+*::selection {
+  background: lime;
+}
+
 html,
 body, h2 {  
   padding: 0;
@@ -203,6 +207,9 @@ header {
   margin-top: -1.5px;
 }
 
+.head-button:focus {
+  outline: none;
+}
 
 /*HEADER END*/
 
@@ -368,41 +375,37 @@ footer {
   flex-basis: calc(9.08 / 13.66 * 100%);
   background: url("layout/rectangle_2.jpg") no-repeat;
   background-size: cover;
-  padding: 15px 55px;
+  padding: 15px 53px;
 }
 
+.foot-right h3 {
+  margin-left: 5px;
+  margin-bottom: 41px;
+}
 
 form {
-  width: 70%;
-  {
-    color: #c0392b;
-  }
+  width: 100%;
+  margin-bottom: 61px;
 }
 
 input,
 textarea {
   border: 1px solid #fff;
-  border-radius: 5px;
+  border-radius: 12px;
+  background: transparent;
+  padding: 17px 27px;
+  color: #fff;  
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
 input {
-  position: relative;
-  padding: 5px;
-  margin-right: 1%;
-  width: 35%;
-}
-
-input::before {
-  content: 'Your name';
-  display: inline-block;
-  position: absolute;
-  font-size: 16px;
-  left: 15px;
-  top: 5px;
-  color: #fff;
-  z-index: 1000;
-  width: 40px;
-  border-bottom: 2px solid red;
+  position: relative;  
+  margin-right: 1.3%;
+  width: 37.8%;  
 }
 
 ::-webkit-input-placeholder {
@@ -423,45 +426,40 @@ input::before {
 
 textarea {
   margin-top: 20px;
-  padding: 5px;
-  width: 71%;
+  padding-top: 5px;
+  width: 77.3%;
   resize: none;
 }
 
-.social {
-  margin: 20px 0 20px 20px;
+.social-block p, .social-block span {
+  font-size: 16.57px;
+  line-height: 32px;
 }
 
-.soc-icon1 {
+.social {
+  margin: 17px 0 38px;
+}
+
+.soc-icon {
   float: left;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+  margin-right: 6px;
   background: url("layout/facebook.png") no-repeat 50% 50% #345BB4;
   background-size: 40%;
-  border-radius: 3px;
+  border-radius: 6px;
   ;
 }
 
 .soc-icon2 {
-  float: left;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
   background: url("layout/dribbble.png") no-repeat 50% 50% #E64895;
-  background-size: 50%;
-  border-radius: 3px;
+  background-size: 50%;  
   ;
 }
 
-.soc-icon3 {
-  float: left;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+.soc-icon3 {  
   background: url("layout/twitter.png") no-repeat 50% 50% #00B4FF;
-  background-size: 60%;
-  border-radius: 3px;
+  background-size: 60%;  
   ;
 }
 
